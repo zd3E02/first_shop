@@ -56,6 +56,7 @@ gulp.task('default',['delHtml','delJs','delSass','copyHtml','copyJs','sass'], fu
   gulp.watch(['assets/**/*.html'],['delHtml','copyHtml']);
   gulp.watch(['assets/js/*.js'],['delJs','copyJs']);
   gulp.watch(['assets/scss/*.scss'],['delSass','sass']);
+  browserSync.reload("styles.css");
 })
 
 // gulp.task('upload', function() {
