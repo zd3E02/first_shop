@@ -3,59 +3,57 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>SkyTravel</title>
+    <title>Sakura Healing</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" />
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/earlyaccess/kokoro.css" rel="stylesheet" />
 </head>
 
 <body class="container">
     <header>
-        <div class="conteiner d-flex flex-column flex-md-row align-items-center p-3 px-md-4 ">
-            <h1 class="my-0 mr-md-auto font-weight-normal">
-                <a href="#"><img src="images/logo.png" alt="接骨院"></a>
-            </h1>
-            <nav class="my-2 my-md-0 mr-md-3">
-                <a class="p-2 text-light" href="#">ヘルプ</a>
-                <a class="p-2 text-light" href="#">サイトマップ</a>
-                <a class="p-2 text-light" href="#">採用情報</a>
-            </nav>
-            <a class="btn btn-outline-primary text-light" href="#">お問い合わせ</a>
-        </div>
-        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link px-5" href="index.html ">トップ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-5" href="#campain">キャンペーン</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-5" href="#course">コース案内</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-5" href="#staff">スタッフ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-5" href="#corporate">会社概要</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-5" href="#recruit">リクルート</a>
-                    </li>
-                </ul>
+        <div class="jumbotron">
+            <h1 class="display-6">さくら接骨院</h1>
+            <div class="container d-flex flex-column flex-md-row align-items-center p-3 px-md-4 ">
+                </h1>
+                <nav class="my-2 my-md-0 mr-md-3">
+                    <a class="p-2" href="#">ヘルプ</a>
+                    <a class="p-2" href="#">サイトマップ</a>
+                    <a class="p-2" href="#">採用情報</a>
+                    <a class="btn btn-outline-primary" href="#">お問い合わせ</a>
+                </nav>
             </div>
-        </nav>
-        <div class="container"></div>
+        </div>
     </header>
-    <div class="input-with-icon">
-        <input type="text" value="01/01/2015" class="form-control" data-provide="datepicker">
-        <span class="icon icon-calendar"></span>
-    </div>
+    <nav class="navbar navbar-expand-md bg-primary">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link px-5" href="index.html ">トップ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-5" href="#campain">キャンペーン</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-5" href="#course">コース案内</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-5" href="#staff">スタッフ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-5" href="#corporate">会社概要</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-5" href="#recruit">リクルート</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container"></div>
     <!-- カルーセル -->
     <main role="main">
         <div id="myCarousel" class="carousel slide container" data-ride="carousel">
@@ -520,6 +518,17 @@
     });
     </script>
     <button type="button" class="btn btn-primary" id="backbtn">トップに戻る <span class="badge badge-light"><i class="fa fa-arrow-up"></i></span></button>
+    <script type="text/javascript">
+    (function(u, d) {
+        var j = d.createElement('script');
+        if (u.indexOf('iPhone') > 0 || u.indexOf('Android') > 0) {
+            j.src = 'js/sakura.smart.js'; /* スマートフォン用の桜のスクリプトのパス or URL */
+        } else {
+            j.src = 'js/sakura.smart.js'; /* パソコン用の桜のスクリプトのパス or URL */
+        }
+        d.body.appendChild(j);
+    })(navigator.userAgent, document);
+    </script>
 </body>
 
 </html>

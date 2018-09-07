@@ -258,7 +258,8 @@
 
   .navbar-nav {
     .nav-link {
-      color: $navbar-dark-color;
+      // color: $navbar-dark-color;
+      color: #ff66ff;
 
       @include hover-focus {
         color: $navbar-dark-hover-color;

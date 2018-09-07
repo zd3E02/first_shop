@@ -2,6 +2,29 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
 @import 'bootstrap';
 
+//
+// @TODO: Add docs to main_font_col!
+//
+@mixin main_font_color{
+            color:#f12fd7;
+}
+
+
+// header
+header {
+    .jumbotron {
+        margin-bottom: 10px;
+        background-image: url("../images/back3.jpg");
+        background-size: cover;
+        @include main_font_color;
+        padding-top: 90px;
+        padding-bottom: 40px;
+        h1{
+            text-align: center;
+        }
+    }
+}
+
 #backbtn {
     position: fixed;
     bottom: 20px;
@@ -12,9 +35,23 @@
 }
 
 body {
+background-image: url("../images/back5.jpg");
+        nav{
+            a{
+                @include main_font_color;
+            }
+        }
 
-  background-image: url("../images/back.jpg");
 
+// background: -webkit-radial-gradient(rgb(252, 247, 251), rgb(250, 168, 229));
+// background: radial-gradient(rgb(252, 247, 251), rgb(250, 168, 229));
+
+
+
+    h1{
+        .wf-kokoro { font-family: "Kokoro"; };
+        // font-style: ;
+    }
 }
 
 h2.display-4 {
@@ -22,3 +59,4 @@ h2.display-4 {
     font-weight: bold;
     color: $primary;
 }
+
