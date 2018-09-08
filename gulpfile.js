@@ -51,7 +51,6 @@ gulp.task('default',['delHtml','delJs','delSass','copyHtml','copyJs','sass'], fu
     server: {
       baseDir: 'html'
     }
-
   });
   gulp.watch(['assets/**/*.html'],['delHtml','copyHtml']);
   gulp.watch(['assets/js/*.js'],['delJs','copyJs']);

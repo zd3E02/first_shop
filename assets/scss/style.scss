@@ -2,61 +2,53 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
 @import 'bootstrap';
 
-//
-// @TODO: Add docs to main_font_col!
-//
-@mixin main_font_color{
-            color:#f12fd7;
-}
-
+// my_variables
+// $main_font_color:#f12fd7;
+$main_font_color:#679006;
 
 // header
-header {
-    .jumbotron {
-        margin-bottom: 10px;
-        background-image: url("../images/back3.jpg");
-        background-size: cover;
-        @include main_font_color;
-        padding-top: 90px;
-        padding-bottom: 40px;
-        h1{
-            text-align: center;
-        }
-    }
+html{
+                color: $main_font_color;
 }
-
-#backbtn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    .badge {
-        color: $primary;
-    }
-}
-
 body {
-background-image: url("../images/back5.jpg");
-        nav{
-            a{
-                @include main_font_color;
+font-family: "Kokoro";
+
+    background-image: url("../images/back5.jpg");
+    header {
+        .jumbotron {
+            background-image: url("../images/back3.jpg");
+            background-size: cover;
+            margin-bottom: 10px;
+            h1 {
+                color: $main_font_color;
+                text-align: center;
             }
         }
-
-
-// background: -webkit-radial-gradient(rgb(252, 247, 251), rgb(250, 168, 229));
-// background: radial-gradient(rgb(252, 247, 251), rgb(250, 168, 229));
-
-
-
-    h1{
-        .wf-kokoro { font-family: "Kokoro"; };
-        // font-style: ;
+        >nav.navbar-light {
+            background-color: $primary;
+            color: $main_font_color;
+        }
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: $main_font_color;
+    }
+    .navbar-light .navbar-brand {
+        color: $main_font_color;
     }
 }
 
-h2.display-4 {
-    font-family: Raleway;
-    font-weight: bold;
-    color: $primary;
+h1 {
+    h2.display-4 {
+        font-weight: bold;
+    }
 }
 
+
+// #backbtn {
+//     position: fixed;
+//     bottom: 20px;
+//     right: 20px;
+//     .badge {
+//         color: $primary;
+//     }
+// }
